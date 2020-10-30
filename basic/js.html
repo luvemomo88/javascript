@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <form class="form">
+      <input type="text" placeholder="검색어입력" />
+    </form>
+    <script>
+      const form = document.querySelector(".form");
+      const input = form.querySelector("input");
+      const word = document.querySelector(".word");
+
+      function searchValue(text) {
+        console.log(text);
+      }
+
+      function handleSubmit(e) {
+        e.preventDefault();
+        const say = input.value;
+        word.textContent = input.value;
+        searchValue(say);
+        input.value = "";
+      }
+
+      function init()
+
+      create
+      Read
+      // update
+      // delete
+
+
+      init();
+    </script>
+  </body>
+</html>
