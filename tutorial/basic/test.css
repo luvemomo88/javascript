@@ -20,128 +20,74 @@ img {
 
 .btn {
   display: inline-block;
-  background: #fff;
-  padding: 12px 36px;
-  font-size: 14px;
+  background: rgb(49, 149, 216);
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #fff;
   border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.btn.signup {
+  background: #662680;
 }
 
 .container {
 }
 
-/* section_01 */
-.section_01 {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-.section_01 > h1 {
-  font-size: 50px;
-  padding: 40px 0;
-}
-
-.section_01 p {
-  font-size: 16px;
-  padding-bottom: 20px;
-}
-
-.section_01 .banner {
-  height: 400px;
-  background: url("https://picsum.photos/1600/400") no-repeat center / cover;
-}
-
-.section_01 .banner h1 {
-  font-size: 50px;
-  padding-top: 100px;
-}
-
-.section_01 .banner p {
-  font-size: 16px;
-}
-
-/* section_02 */
-.section_02 {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-.section_02 h1 {
-  font-size: 50px;
-  padding: 40px 0;
-}
-
-.section_02 p {
-  font-size: 16px;
-  padding-bottom: 20px;
-}
-
-.section_02 .cards {
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.section_02 .cards ul {
+.header {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
 }
 
-/* section_03 */
-.section_03 {
-  text-align: center;
-  margin-bottom: 100px;
+.logo {
+  margin-right: 50px;
+  text-transform: uppercase;
 }
 
-.section_03 h1 {
-  font-size: 50px;
-  padding: 40px 0;
-}
-
-.section_03 p {
-  font-size: 16px;
-  padding-bottom: 20px;
-}
-
-.section_03 .cards {
-  width: 1160px;
-  margin: 0 auto;
+.nav {
   display: flex;
-  justify-content: space-between;
 }
 
-.section_03 .cards .item {
-  width: 560px;
-  height: 300px;
-  background: red;
+.nav a {
+  /* background: red; */
+  height: 60px;
+  display: block;
+  line-height: 60px;
+  padding: 0 26px;
+  text-transform: capitalize;
+}
+
+.nav a:hover {
+  color: #1c65d3;
+}
+
+/* .logo {
+  margin-right: auto;
+} */
+
+.nav_btns {
+  margin-left: auto;
+}
+
+.slide {
+  height: 600px;
+  background: url("./bg.jpg") no-repeat center / cover;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.section_03 .cards .item h4 {
-  font-size: 36px;
+  position: relative;
   color: #fff;
-  margin-bottom: 20px;
 }
 
-.section_03 .cards .item p {
-  color: yellow;
-}
-
-.section_03 .cards .item:nth-child(1) {
-  background: url("https://picsum.photos/id/10/500/300") no-repeat center /
-    cover;
-}
-
-.section_03 .cards .item:nth-child(2) {
-  background: url("https://picsum.photos/id/12/500/300") no-repeat center /
-    cover;
-}
-
-/* footer */
-.footer {
-  background: #14151b;
-  color: #fff;
+.slide_info {
   text-align: center;
-  padding: 120px 0;
+}
+
+.name {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
